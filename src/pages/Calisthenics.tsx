@@ -92,7 +92,7 @@ export function Calisthenics() {
   }
 
   return (
-    <div style={{ paddingBottom: '6rem' }}>
+    <div style={{ paddingBottom: '48px' }}>
       {/* Header */}
       <div style={{
         background: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',

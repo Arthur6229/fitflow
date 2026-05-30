@@ -56,7 +56,7 @@ export function Profile() {
   };
 
   return (
-    <div style={{ paddingBottom: '6rem' }}>
+    <div style={{ paddingBottom: '48px' }}>
       {/* Header */}
       <div style={{
         background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',

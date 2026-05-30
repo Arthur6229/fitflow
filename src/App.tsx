@@ -8,6 +8,8 @@ import { Gym } from './pages/Gym';
 import { Diet } from './pages/Diet';
 import { Profile } from './pages/Profile';
 
+const SIDEBAR_W = 220;
+
 function App() {
   const { onboardingComplete } = useStore();
   const [tab, setTab] = useState('home');
@@ -17,22 +19,21 @@ function App() {
   }
 
   return (
-    <div style={{
-      maxWidth: 430,
-      width: '100%',
-      minHeight: '100vh',
-      background: '#f8fafc',
-      position: 'relative',
-      overflowX: 'hidden',
-    }}>
-      <div style={{ overflowY: 'auto', minHeight: '100vh' }}>
-        {tab === 'home' && <Home onNavigate={setTab} />}
-        {tab === 'calisthenics' && <Calisthenics />}
-        {tab === 'gym' && <Gym />}
-        {tab === 'diet' && <Diet />}
-        {tab === 'profile' && <Profile />}
-      </div>
+    <div style={{ display: 'flex', minHeight: '100vh', background: '#f8fafc' }}>
       <BottomNav active={tab} onChange={setTab} />
+
+      <main style={{
+        marginLeft: SIDEBAR_W,
+        flex: 1,
+        minHeight: '100vh',
+        overflowX: 'hidden',
+      }}>
+        {tab === 'home'         && <Home onNavigate={setTab} />}
+        {tab === 'calisthenics' && <Calisthenics />}
+        {tab === 'gym'          && <Gym />}
+        {tab === 'diet'         && <Diet />}
+        {tab === 'profile'      && <Profile />}
+      </main>
     </div>
   );
 }

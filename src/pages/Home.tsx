@@ -111,7 +111,7 @@ export function Home({ onNavigate }: Props) {
   };
 
   return (
-    <div style={{ paddingBottom: '6rem', paddingTop: 0 }}>
+    <div style={{ paddingBottom: '48px', paddingTop: 0 }}>
       {/* Hero Header */}
       <div style={{
         background: 'linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)',

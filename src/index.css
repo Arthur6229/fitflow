@@ -5,15 +5,13 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
-  background: #e2e8f0;
+  background: #f8fafc;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
-  display: flex;
-  justify-content: center;
   min-height: 100vh;
 }
 

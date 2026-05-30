@@ -105,7 +105,7 @@ export function Gym() {
   }
 
   return (
-    <div style={{ paddingBottom: '6rem' }}>
+    <div style={{ paddingBottom: '48px' }}>
       {/* Header */}
       <div style={{
         background: 'linear-gradient(135deg, #6366f1 0%, #4338ca 100%)',
